@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 // ================= PRO-LEVEL GLOBAL SEO CONFIGURATION =================
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.tuneplusmusic.com'),
+  metadataBase: new URL('https://www.maevemusic.in/'),
   title: {
-    default: "MaeveMusic | Premium Music Distribution & White Label SaaS",
+    default: "MaeveMusic | Premium Music Distribution",
     template: "%s | MaeveMusic"
   },
-  description: "India's leading premium music distribution platform. Distribute to Spotify, Apple Music, and 150+ stores. Keep 100% of your royalties with Pay-Per-Release or launch your own label with our White Label SaaS.",
+  description: "India's leading premium music distribution platform. Distribute to Spotify, Apple Music, and 150+ stores. Keep 100% of your royalties with Pay-Per-Release.",
   
   keywords: [
     // Core Distribution
@@ -52,12 +52,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.tuneplusmusic.com",
+    url: "https://www.maevemusic.in/",
     title: "MaeveMusic | Premium Music Distribution & SaaS",
-    description: "Go global with TunePlus. Distribute your music to 150+ stores, keep 100% royalties, or launch your own white-label record label.",
+    description: "Go global with MaeveMusic. Distribute your music to 150+ stores, keep 100% royalties.",
     siteName: "MaeveMusic",
     images: [{
-      url: "/logos/tuneplus-logo.png", // Changed to your main logo for better branding
+      url: "/logos/maevemusic.png", // Changed to your main logo for better branding
       width: 1200,
       height: 630,
       alt: "MaeveMusic Dashboard Preview",
@@ -68,12 +68,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MaeveMusic | Sell Your Music Everywhere",
     description: "Keep 100% of your royalties. Premium distribution for independent artists and labels.",
-    images: ["/logos/tuneplus-logo.png"],
+    images: ["/logos/maevemusic.png"],
   },
 
   // Canonical tag duplicate content issues hatane ke liye
   alternates: {
-    canonical: 'https://www.tuneplusmusic.com',
+    canonical: 'https://www.maevemusic.in/',
   },
 };
 
