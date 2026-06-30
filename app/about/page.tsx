@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Rocket, ShieldCheck, Globe, Users, Clock, Banknote, ArrowRight, Zap } from 'lucide-react';
+import { Rocket, ShieldCheck, Globe, Users, Clock, Banknote, ArrowRight, Zap, MapPin } from 'lucide-react';
 
 // ================= PREMIUM MAEVE NETWORK FIBER BACKGROUND =================
 const FiberNetwork = () => {
@@ -155,8 +155,6 @@ export default function AboutPage() {
           </Link>
           
           <div className="hidden xl:flex items-center gap-8 font-bold text-[11px] uppercase tracking-widest text-slate-400">
-            
-            
             <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
             <Link href="/pricing" className="hover:text-cyan-400 transition-colors">Pricing</Link>
             <Link href="/about" className="hover:text-cyan-400 transition-colors">About</Link>
@@ -326,6 +324,27 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ================= NEW ADDRESS / Office SECTION ================= */}
+      <section className="py-24 px-6 max-w-[1000px] mx-auto z-10 relative border-t border-white/5">
+        <div className="card-glass p-8 md:p-12 rounded-[2.5rem] shadow-[0_0_40px_rgba(6,182,212,0.1)] relative overflow-hidden border-cyan-500/20 text-center flex flex-col items-center">
+          <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 to-transparent opacity-50"></div>
+          
+          <div className="w-16 h-16 bg-[#030108] border border-white/10 rounded-full flex items-center justify-center text-cyan-400 mb-6 relative z-10 shadow-[0_0_20px_rgba(6,182,212,0.2)]">
+            <MapPin size={28} />
+          </div>
+          
+          <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white mb-6 relative z-10">
+            Head <span className="text-cyan-400">Office</span>
+          </h3>
+          
+          <div className="text-slate-300 font-medium text-lg md:text-xl leading-relaxed relative z-10 max-w-lg bg-black/30 px-8 py-6 rounded-2xl border border-white/5">
+            <p className="mb-2">Chilarai Path, Ward No-13</p>
+            <p className="mb-2">Sivasagar, 785640</p>
+            <p className="text-cyan-400 font-bold">Assam, India</p>
+          </div>
+        </div>
+      </section>
+
       {/* ================= FOOTER ================= */}
       <footer className="bg-[#020105] pt-20 pb-10 border-t border-white/5 text-center md:text-left relative z-20">
          <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
@@ -371,7 +390,6 @@ export default function AboutPage() {
              © {new Date().getFullYear()} Maeve Music. All rights reserved.
            </div>
            
-           {/* Tumhare original social links yahan intact hain */}
            <div className="flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-500">
               <a href="https://www.facebook.com/share/18qLo6Yx6D/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a>
               <a href="https://x.com/Maevemusic9" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">X (Twitter)</a>
