@@ -484,8 +484,8 @@ export default function MaeveMusicHelpCenter() {
             <ul className="space-y-3 text-slate-400 text-sm font-medium">
               <li><button onClick={() => { setCurrentView('home'); window.scrollTo(0,0); }} className="hover:text-cyan-400 transition-colors">Help Center / FAQ</button></li>
               <li><Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact Us</Link></li>
-              <li><Link href="/terms" className="hover:text-cyan-400 transition-colors">Terms of Service</Link></li>
-              <li><Link href="/privacy" className="hover:text-cyan-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms-and-conditions" className="hover:text-cyan-400 transition-colors">Terms of Service</Link></li>
+              <li><Link href="/terms-and-conditions" className="hover:text-cyan-400 transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
