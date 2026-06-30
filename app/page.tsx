@@ -311,7 +311,7 @@ export default function MaeveMusicLandingPage() {
           </Reveal>
 
           {/* RIGHT SIDE: BENTO GRID WITH DASHBOARD WIDGETS & PERFECT IMAGES */}
-          <Reveal delay={200} className="relative w-full h-[550px] flex items-center justify-center z-10 hidden lg:flex">
+          <Reveal delay={200} className="relative w-full h-[550px] flex items-center justify-center z-10 mt-12 lg:mt-0">
             
             <div className="grid grid-cols-3 grid-rows-3 gap-5 h-[480px] w-full max-w-[500px]">
                 
